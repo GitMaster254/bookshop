@@ -48,6 +48,6 @@
     </select><br><br>
     <input type="submit" value="Update Book">
 </form>
-<br><a href="listBooks.jsp">Back to List</a>
+<br><a href="listbook.jsp">Back to List</a>
 </body>
 </html>

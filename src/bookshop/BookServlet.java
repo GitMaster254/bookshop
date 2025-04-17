@@ -46,7 +46,7 @@ public class BookServlet extends HttpServlet {
             
             int result = ps.executeUpdate();
             if (result > 0) {
-                response.sendRedirect("listBooks.jsp");
+                response.sendRedirect("listbook.jsp");
             } else {
                 response.getWriter().println("Error adding book.");
             }
@@ -83,7 +83,7 @@ public class BookServlet extends HttpServlet {
              ResultSet rs = stmt.executeQuery(query)) {
             
             request.setAttribute("books", rs);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("listBooks.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("listbook.jsp");
             dispatcher.forward(request, response);
         } catch (SQLException e) {
             e.printStackTrace();
@@ -102,7 +102,7 @@ public class BookServlet extends HttpServlet {
             int result = ps.executeUpdate();
             
             if (result > 0) {
-                response.sendRedirect("listBooks.jsp");
+                response.sendRedirect("listbook.jsp");
             } else {
                 response.getWriter().println("Error deleting book.");
             }

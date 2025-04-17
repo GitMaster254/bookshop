@@ -29,12 +29,12 @@
         <td><%= rs.getString("bookname") %></td>
         <td><%= rs.getString("fee") %></td>
         <td>
-            <a href="updateBook.jsp?id=<%= rs.getInt("id") %>">Edit</a> | 
-            <a href="deleteBook.jsp?id=<%= rs.getInt("id") %>">Delete</a>
+            <a href="updatebook.jsp?id=<%= rs.getInt("id") %>">Edit</a> | 
+            <a href="deletebook.jsp?id=<%= rs.getInt("id") %>">Delete</a>
         </td>
     </tr>
 <% } %>
 </table>
-<br><a href="addBook.jsp">Add New Book</a>
+<br><a href="addbook.jsp">Add New Book</a>
 </body>
 </html>

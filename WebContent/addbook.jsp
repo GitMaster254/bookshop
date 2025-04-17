@@ -39,6 +39,6 @@
     </select><br><br>
     <input type="submit" value="Add Book">
 </form>
-<br><a href="listBooks.jsp">View Book List</a>
+<br><a href="listbook.jsp">View Book List</a>
 </body>
 </html>
