@@ -24,7 +24,7 @@ public class BookServlet extends HttpServlet {
         }
     }
 
-    // Handle POST requests (Add Book)
+    // save and add Book to database
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -46,7 +46,7 @@ public class BookServlet extends HttpServlet {
             
             int result = ps.executeUpdate();
             if (result > 0) {
-                response.sendRedirect("listbook.jsp");
+                response.sendRedirect("/WebContent/listbook.jsp");
             } else {
                 response.getWriter().println("Error adding book.");
             }
@@ -102,7 +102,7 @@ public class BookServlet extends HttpServlet {
             int result = ps.executeUpdate();
             
             if (result > 0) {
-                response.sendRedirect("listbook.jsp");
+                response.sendRedirect("/WebContent/listbook.jsp");
             } else {
                 response.getWriter().println("Error deleting book.");
             }

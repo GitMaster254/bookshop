@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCI + SONAS</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Get Your Favourite Novels here!</h1>
+    <p>We are openned for business, glad to be here to serve
+        and offer quality services and products!
+    </p>
+    <p><b>Fill the form below to order your favourite Novels</b></p>
+    <p>The form will be processed by a Java servlet</p>
+    <form action="/src/bookshop/BookServlet.java" method="post">
+        
+        <table>
+            <tr>
+                <td>ISBM:</td>
+                <td>
+                    <input type="text" name="ISBM" placeholder="ISBM">
+                </td>
+            </tr>
+            <tr>
+                <td>Author:</td>
+                <td><input type ="text" name="Author" placeholder="Author"></td>
+            </tr>
+            <tr>
+                <td>Book Name:</td>
+                <td>        <input type ="text" name="Bookname" placeholder="Book Name">
+                </td>
+            </tr>
+            <tr colspan="2"> 
+               <td>
+                <input type="submit" class="btn">
+               </td> 
+               <td>
+                <select name="fee">
+                    <option>Choise</option>
+                    <option>Free</option>
+                    <option>Trial</option>
+                    <option>Purchased</option>
+                </select>
+               </td> 
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
