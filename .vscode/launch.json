@@ -1,0 +1,11 @@
+{
+    "configurations": [
+    {
+        "name": "Launch Edge",
+        "request": "launch",
+        "type": "chrome",
+        "url": "http://localhost:8080/bookshop/listbook.jsp",
+        "webRoot": "${workspaceFolder}"
+    }
+    ]
+}
